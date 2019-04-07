@@ -1,0 +1,11 @@
+/Users/edersonlima/Projects/Poc-TCC/src/bin/Debug/netcoreapp2.0/Poc-Tcc.deps.json
+/Users/edersonlima/Projects/Poc-TCC/src/bin/Debug/netcoreapp2.0/Poc-Tcc.runtimeconfig.json
+/Users/edersonlima/Projects/Poc-TCC/src/bin/Debug/netcoreapp2.0/Poc-Tcc.runtimeconfig.dev.json
+/Users/edersonlima/Projects/Poc-TCC/src/bin/Debug/netcoreapp2.0/Poc-Tcc.dll
+/Users/edersonlima/Projects/Poc-TCC/src/bin/Debug/netcoreapp2.0/Poc-Tcc.pdb
+/Users/edersonlima/Projects/Poc-TCC/src/obj/Debug/netcoreapp2.0/Poc-Tcc.csprojAssemblyReference.cache
+/Users/edersonlima/Projects/Poc-TCC/src/obj/Debug/netcoreapp2.0/Poc-Tcc.csproj.CoreCompileInputs.cache
+/Users/edersonlima/Projects/Poc-TCC/src/obj/Debug/netcoreapp2.0/Poc-Tcc.AssemblyInfoInputs.cache
+/Users/edersonlima/Projects/Poc-TCC/src/obj/Debug/netcoreapp2.0/Poc-Tcc.AssemblyInfo.cs
+/Users/edersonlima/Projects/Poc-TCC/src/obj/Debug/netcoreapp2.0/Poc-Tcc.dll
+/Users/edersonlima/Projects/Poc-TCC/src/obj/Debug/netcoreapp2.0/Poc-Tcc.pdb

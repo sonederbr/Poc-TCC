@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{27E2D292-D66B-47A1-AFF0-5DBADD669799}|Default">
+  <MonoDevelop.Ide.ItemProperties.AngularASPNETCore2WebApiAuth PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/AuthController.cs">
+    <Files>
+      <File FileName="Controllers/AuthController.cs" Line="57" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AngularASPNETCore2WebApiAuth" expanded="True" selected="True">
+            <Node name="AngularASPNETCore2WebApiAuth" expanded="True">
+              <Node name="Auth" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/edersonlima/Projects/Poc-TCC/src/Controllers/AuthController.cs" relfile="Controllers/AuthController.cs" line="32" column="1" />
+      <Breakpoint file="/Users/edersonlima/Projects/Poc-TCC/src/Controllers/AuthController.cs" relfile="Controllers/AuthController.cs" line="49" column="1" />
+      <Breakpoint file="/Users/edersonlima/Projects/Poc-TCC/src/Controllers/AuthController.cs" relfile="Controllers/AuthController.cs" line="57" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
