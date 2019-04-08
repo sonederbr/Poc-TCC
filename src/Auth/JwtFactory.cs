@@ -5,11 +5,11 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Principal;
 using System.Threading.Tasks;
-using AngularASPNETCore2WebApiAuth.Models;
+using PocTcc.Models;
 using Microsoft.Extensions.Options;
  
 
-namespace AngularASPNETCore2WebApiAuth.Auth
+namespace PocTcc.Auth
 {
     public class JwtFactory : IJwtFactory
     {

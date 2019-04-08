@@ -1,6 +1,6 @@
 ﻿
 
-namespace AngularASPNETCore2WebApiAuth.ViewModels
+namespace PocTcc.ViewModels
 {
     public class RegistrationViewModel
     {

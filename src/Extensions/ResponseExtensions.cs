@@ -1,7 +1,7 @@
 
 using Microsoft.AspNetCore.Http;
 
-namespace AngularASPNETCore2WebApiAuth.Extensions
+namespace PocTcc.Extensions
 {
     public static class ResponseExtensions
     {

@@ -1,8 +1,8 @@
 ﻿
-using AngularASPNETCore2WebApiAuth.ViewModels.Validations;
+using PocTcc.ViewModels.Validations;
 using FluentValidation.Attributes;
 
-namespace AngularASPNETCore2WebApiAuth.ViewModels
+namespace PocTcc.ViewModels
 {
     [Validator(typeof(CredentialsViewModelValidator))]
     public class CredentialsViewModel

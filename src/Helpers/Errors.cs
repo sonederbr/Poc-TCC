@@ -3,7 +3,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace AngularASPNETCore2WebApiAuth.Helpers
+namespace PocTcc.Helpers
     { 
         public static class Errors
         {

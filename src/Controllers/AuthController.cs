@@ -1,28 +1,31 @@
 ﻿using System.Security.Claims;
 using System.Threading.Tasks;
-using AngularASPNETCore2WebApiAuth.Auth;
-using AngularASPNETCore2WebApiAuth.Helpers;
-using AngularASPNETCore2WebApiAuth.Models;
-using AngularASPNETCore2WebApiAuth.Models.Entities;
-using AngularASPNETCore2WebApiAuth.ViewModels;
+using PocTcc.Auth;
+using PocTcc.Helpers;
+using PocTcc.Models;
+using PocTcc.Models.Entities;
+using PocTcc.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
- 
+using PocTcc.Data;
 
-namespace AngularASPNETCore2WebApiAuth.Controllers
+namespace PocTcc.Controllers
 {
     [Route("api/[controller]")]
     public class AuthController : Controller
     {
         private readonly IJwtFactory _jwtFactory;
         private readonly JwtIssuerOptions _jwtOptions;
+    private readonly IRepository _reposotiry;
 
-        public AuthController( IJwtFactory jwtFactory, IOptions<JwtIssuerOptions> jwtOptions)
+
+    public AuthController( IJwtFactory jwtFactory, IOptions<JwtIssuerOptions> jwtOptions, IRepository repository)
         {
             _jwtFactory = jwtFactory;
             _jwtOptions = jwtOptions.Value;
+      _reposotiry = repository;
         }
 
         // POST api/auth/login
@@ -49,16 +52,17 @@ namespace AngularASPNETCore2WebApiAuth.Controllers
             if (string.IsNullOrEmpty(userName) || string.IsNullOrEmpty(password))
                 return await Task.FromResult<ClaimsIdentity>(null);
 
-            // get the user to verifty
+      // get the user to verifty
+      var costumer = _reposotiry.GetCustomerByEmail(userName);
 
             // check the credentials
-            //if (userName == "ederson.ads@gmail.com" && password == "123456")
-            //{
-                return await Task.FromResult(_jwtFactory.GenerateClaimsIdentity(userName, System.Guid.NewGuid().ToString()));
-            //}
+            if (costumer != null && costumer.Identity.PasswordHash == password)
+            {
+                return await Task.FromResult(_jwtFactory.GenerateClaimsIdentity(costumer.Identity.UserName, costumer.Id));
+            }
 
             // Credentials are invalid, or account doesn't exist
-            //return await Task.FromResult<ClaimsIdentity>(null);
+            return await Task.FromResult<ClaimsIdentity>(null);
         }
     }
 }

@@ -3,7 +3,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
  
 
-namespace AngularASPNETCore2WebApiAuth
+namespace PocTcc
 {
     public class Program
     {

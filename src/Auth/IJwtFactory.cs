@@ -2,7 +2,7 @@
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-namespace AngularASPNETCore2WebApiAuth.Auth
+namespace PocTcc.Auth
 {
     public interface IJwtFactory
     {

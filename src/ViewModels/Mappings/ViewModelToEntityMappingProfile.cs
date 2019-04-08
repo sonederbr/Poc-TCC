@@ -1,9 +1,9 @@
 ﻿
-using AngularASPNETCore2WebApiAuth.Models.Entities;
+using PocTcc.Models.Entities;
 using AutoMapper;
  
 
-namespace AngularASPNETCore2WebApiAuth.ViewModels.Mappings
+namespace PocTcc.ViewModels.Mappings
 {
     public class ViewModelToEntityMappingProfile : Profile
     {

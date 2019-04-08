@@ -1,5 +1,5 @@
 ﻿
-namespace AngularASPNETCore2WebApiAuth.Helpers
+namespace PocTcc.Helpers
 {
     public static class Constants
     {

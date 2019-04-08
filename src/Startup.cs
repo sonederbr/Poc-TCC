@@ -3,11 +3,11 @@
 using System;
 using System.Net;
 using System.Text;
-using AngularASPNETCore2WebApiAuth.Auth;
-using AngularASPNETCore2WebApiAuth.Extensions;
-using AngularASPNETCore2WebApiAuth.Helpers;
-using AngularASPNETCore2WebApiAuth.Models;
-using AngularASPNETCore2WebApiAuth.Models.Entities;
+using PocTcc.Auth;
+using PocTcc.Extensions;
+using PocTcc.Helpers;
+using PocTcc.Models;
+using PocTcc.Models.Entities;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -21,9 +21,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.IdentityModel.Tokens;
+using PocTcc.Data;
 
-
-namespace AngularASPNETCore2WebApiAuth
+namespace PocTcc
 {
   public class Startup
   {
@@ -43,6 +43,7 @@ namespace AngularASPNETCore2WebApiAuth
       // Add framework services.
 
       services.AddSingleton<IJwtFactory, JwtFactory>();
+      services.AddSingleton<IRepository, RepositoryFake>();
 
       // Register the ConfigurationBuilder instance of FacebookAuthSettings
       services.TryAddTransient<IHttpContextAccessor, HttpContextAccessor>();

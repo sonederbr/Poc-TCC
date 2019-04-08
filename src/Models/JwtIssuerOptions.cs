@@ -4,7 +4,7 @@ using System;
 using System.Threading.Tasks;
 using Microsoft.IdentityModel.Tokens;
 
-namespace AngularASPNETCore2WebApiAuth.Models
+namespace PocTcc.Models
 {
     public class JwtIssuerOptions
     {

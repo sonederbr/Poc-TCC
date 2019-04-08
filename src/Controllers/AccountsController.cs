@@ -1,24 +1,23 @@
-﻿
-
-using System.Threading.Tasks;
-using AngularASPNETCore2WebApiAuth.Helpers;
-using AngularASPNETCore2WebApiAuth.Models.Entities;
-using AngularASPNETCore2WebApiAuth.ViewModels;
+﻿using System.Threading.Tasks;
+using PocTcc.Helpers;
+using PocTcc.Models.Entities;
+using PocTcc.ViewModels;
 using AutoMapper;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
- 
+using PocTcc.Data;
 
-namespace AngularASPNETCore2WebApiAuth.Controllers
+namespace PocTcc.Controllers
 {
     [Route("api/[controller]")] 
     public class AccountsController : Controller
     {
         private readonly IMapper _mapper;
+    private readonly IRepository _reposotiry;
 
-        public AccountsController(IMapper mapper)
+        public AccountsController(IMapper mapper, IRepository repository)
         {
             _mapper = mapper;
+            _reposotiry = repository;
         }
 
         // POST api/accounts
@@ -31,13 +30,13 @@ namespace AngularASPNETCore2WebApiAuth.Controllers
             }
 
             var userIdentity = _mapper.Map<AppUser>(model);
+            userIdentity.PasswordHash = model.Password;
 
-            //var result = await _userManager.CreateAsync(userIdentity, model.Password);
+            var result = _reposotiry.GetCustomerByEmail(model.Email);
 
-            //if (!result.Succeeded) return new BadRequestObjectResult(Errors.AddErrorsToModelState(result, ModelState));
+            if (result != null) return new BadRequestObjectResult(Errors.AddErrorToModelState("1001", "Usuário já cadastrado com este email", ModelState));
 
-            //await _appDbContext.Customers.AddAsync(new Customer { IdentityId = userIdentity.Id, Location = model.Location });
-            //await _appDbContext.SaveChangesAsync();
+             _reposotiry.AddCustomer(new Customer(userIdentity.Id, userIdentity, model.Location, "", ""));
 
             return new OkObjectResult("Account created");
         }

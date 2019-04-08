@@ -3,7 +3,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iis": {
-      "applicationUrl": "http://localhost/AngularASPNETCore2WebApiAuth",
+      "applicationUrl": "http://localhost/PocTcc",
       "sslPort": 0
     },
     "iisExpress": {
@@ -20,7 +20,7 @@
       },
       "applicationUrl": "http://localhost:5000"
     },
-    "AngularASPNETCore2WebApiAuth": {
+    "PocTcc": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

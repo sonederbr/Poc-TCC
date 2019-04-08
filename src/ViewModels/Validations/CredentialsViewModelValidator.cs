@@ -2,7 +2,7 @@
 using FluentValidation;
  
 
-namespace AngularASPNETCore2WebApiAuth.ViewModels.Validations
+namespace PocTcc.ViewModels.Validations
 {
     public class CredentialsViewModelValidator : AbstractValidator<CredentialsViewModel>
     {
