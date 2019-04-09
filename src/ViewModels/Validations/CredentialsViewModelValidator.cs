@@ -1,16 +1,14 @@
-﻿
 using FluentValidation;
- 
 
 namespace PocTcc.ViewModels.Validations
 {
-    public class CredentialsViewModelValidator : AbstractValidator<CredentialsViewModel>
+  public class CredentialsViewModelValidator : AbstractValidator<CredentialsViewModel>
+  {
+    public CredentialsViewModelValidator()
     {
-        public CredentialsViewModelValidator()
-        {
-            RuleFor(vm => vm.UserName).NotEmpty().WithMessage("Username cannot be empty");
-            RuleFor(vm => vm.Password).NotEmpty().WithMessage("Password cannot be empty");
-            RuleFor(vm => vm.Password).Length(6, 12).WithMessage("Password must be between 6 and 12 characters");
-        }
+      RuleFor(vm => vm.UserName).NotEmpty().WithMessage("Username deve ser informado");
+      RuleFor(vm => vm.Password).NotEmpty().WithMessage("Senha deve ser informado");
+      RuleFor(vm => vm.Password).Length(6, 12).WithMessage("Senha precisa ser entre 6 e 12 caracteres");
     }
+  }
 }

@@ -2,6 +2,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <TypeScriptToolsVersion>2.3</TypeScriptToolsVersion>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Data\" />
@@ -18,5 +19,5 @@
   </ItemGroup>
   <Target Name="AngularBuild" AfterTargets="Build">
     <Exec Command="npm run build" />
-  </Target> 
+  </Target>
 </Project>

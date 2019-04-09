@@ -9,3 +9,14 @@
 /Users/edersonlima/Projects/Poc-TCC/src/obj/Debug/netcoreapp2.0/Poc-Tcc.AssemblyInfo.cs
 /Users/edersonlima/Projects/Poc-TCC/src/obj/Debug/netcoreapp2.0/Poc-Tcc.dll
 /Users/edersonlima/Projects/Poc-TCC/src/obj/Debug/netcoreapp2.0/Poc-Tcc.pdb
+C:\My-Projects\Poc-TCC\src\obj\Debug\netcoreapp2.0\Poc-Tcc.csprojAssemblyReference.cache
+C:\My-Projects\Poc-TCC\src\obj\Debug\netcoreapp2.0\Poc-Tcc.dll
+C:\My-Projects\Poc-TCC\src\obj\Debug\netcoreapp2.0\Poc-Tcc.pdb
+C:\My-Projects\Poc-TCC\src\bin\Debug\netcoreapp2.0\Poc-Tcc.deps.json
+C:\My-Projects\Poc-TCC\src\bin\Debug\netcoreapp2.0\Poc-Tcc.runtimeconfig.json
+C:\My-Projects\Poc-TCC\src\bin\Debug\netcoreapp2.0\Poc-Tcc.runtimeconfig.dev.json
+C:\My-Projects\Poc-TCC\src\bin\Debug\netcoreapp2.0\Poc-Tcc.dll
+C:\My-Projects\Poc-TCC\src\bin\Debug\netcoreapp2.0\Poc-Tcc.pdb
+C:\My-Projects\Poc-TCC\src\obj\Debug\netcoreapp2.0\Poc-Tcc.csproj.CoreCompileInputs.cache
+C:\My-Projects\Poc-TCC\src\obj\Debug\netcoreapp2.0\Poc-Tcc.AssemblyInfoInputs.cache
+C:\My-Projects\Poc-TCC\src\obj\Debug\netcoreapp2.0\Poc-Tcc.AssemblyInfo.cs

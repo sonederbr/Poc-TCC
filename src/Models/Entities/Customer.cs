@@ -1,5 +1,3 @@
-
-
 using System;
 
 namespace PocTcc.Models.Entities
@@ -10,7 +8,6 @@ namespace PocTcc.Models.Entities
     {
       Identity = new AppUser();
     }
-
     public Customer(string identityId, AppUser identity, string location, string locale, string gender)
     {
       Id = Guid.NewGuid().ToString();
@@ -20,7 +17,6 @@ namespace PocTcc.Models.Entities
       Locale = locale;
       Gender = gender;
     }
-
     public string Id { get; set; }
     public string IdentityId { get; set; }
     public AppUser Identity { get; set; }  // navigation property

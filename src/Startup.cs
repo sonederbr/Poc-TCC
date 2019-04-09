@@ -1,27 +1,24 @@
-
-
 using System;
 using System.Net;
 using System.Text;
+using AutoMapper;
+using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+using Microsoft.IdentityModel.Tokens;
 using PocTcc.Auth;
+using PocTcc.Data;
 using PocTcc.Extensions;
 using PocTcc.Helpers;
 using PocTcc.Models;
 using PocTcc.Models.Entities;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using AutoMapper;
-using FluentValidation.AspNetCore;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Diagnostics;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.DependencyInjection.Extensions;
-using Microsoft.IdentityModel.Tokens;
-using PocTcc.Data;
 
 namespace PocTcc
 {
@@ -97,8 +94,8 @@ namespace PocTcc
       // add identity
       var builder = services.AddIdentityCore<AppUser>(o =>
       {
-              // configure identity options
-              o.Password.RequireDigit = false;
+        // configure identity options
+        o.Password.RequireDigit = false;
         o.Password.RequireLowercase = false;
         o.Password.RequireUppercase = false;
         o.Password.RequireNonAlphanumeric = false;
@@ -125,16 +122,16 @@ namespace PocTcc
             builder.Run(
                       async context =>
                       {
-                    context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                    context.Response.Headers.Add("Access-Control-Allow-Origin", "*");
+                        context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                        context.Response.Headers.Add("Access-Control-Allow-Origin", "*");
 
-                    var error = context.Features.Get<IExceptionHandlerFeature>();
-                    if (error != null)
-                    {
-                      context.Response.AddApplicationError(error.Error.Message);
-                      await context.Response.WriteAsync(error.Error.Message).ConfigureAwait(false);
-                    }
-                  });
+                        var error = context.Features.Get<IExceptionHandlerFeature>();
+                        if (error != null)
+                        {
+                          context.Response.AddApplicationError(error.Error.Message);
+                          await context.Response.WriteAsync(error.Error.Message).ConfigureAwait(false);
+                        }
+                      });
           });
 
       app.UseAuthentication();
