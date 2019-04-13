@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 import { HomeDetails } from '../models/home.details.interface';
 import { DashboardService } from '../services/dashboard.service';
@@ -12,16 +13,18 @@ export class HomeComponent implements OnInit {
 
   homeDetails: HomeDetails;
 
-  constructor(private dashboardService: DashboardService) { }
+  constructor(private dashboardService: DashboardService, private route: ActivatedRoute,
+        private router: Router) { }
 
   ngOnInit() {
-
+    
     this.dashboardService.getHomeDetails()
     .subscribe((homeDetails: HomeDetails) => {
       this.homeDetails = homeDetails;
     },
     error => {
-      //this.notificationService.printErrorMessage(error);
+        //this.notificationService.printErrorMessage(error);
+        //this.router.navigateByUrl("account/login");
     });
     
   }

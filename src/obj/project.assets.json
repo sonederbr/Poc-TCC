@@ -2822,6 +2822,15 @@
           "lib/netstandard1.0/Remotion.Linq.dll": {}
         }
       },
+      "RestSharp/106.6.9": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -8037,6 +8046,20 @@
         "remotion.linq.nuspec"
       ]
     },
+    "RestSharp/106.6.9": {
+      "sha512": "8RNSrGB8OJqkVnUno0amSL1dsTXGkqVjRvpgwhDR1cy4xhwc/6PWAJFiz6B5cnwmCB9aYMGaHrgKfTt6iMziqw==",
+      "type": "package",
+      "path": "restsharp/106.6.9",
+      "files": [
+        ".signature.p7s",
+        "lib/net452/RestSharp.dll",
+        "lib/net452/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.106.6.9.nupkg.sha512",
+        "restsharp.nuspec"
+      ]
+    },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "sha512": "HdSSp5MnJSsg08KMfZThpuLPJpPwE5hBXvHwoKWosyHHfe8Mh5WKT0ylEOf6yNzX6Ngjxe4Whkafh5q7Ymac4Q==",
       "type": "package",
@@ -13141,6 +13164,7 @@
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 3.2.0",
       "Microsoft.AspNetCore.All >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
+      "RestSharp >= 106.6.9",
       "fluentvalidation.aspnetcore >= 7.3.3"
     ]
   },
@@ -13195,6 +13219,10 @@
             "target": "Package",
             "version": "[2.0.0, )",
             "autoReferenced": true
+          },
+          "RestSharp": {
+            "target": "Package",
+            "version": "[106.6.9, )"
           },
           "fluentvalidation.aspnetcore": {
             "target": "Package",

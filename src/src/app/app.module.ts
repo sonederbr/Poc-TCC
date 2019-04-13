@@ -17,12 +17,14 @@ import { AccountModule }  from './account/account.module';
 import { DashboardModule }  from './dashboard/dashboard.module';
 
 import { ConfigService } from './shared/utils/config.service';
+import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent      
+    HomeComponent,
+    DetailComponent      
   ],
   imports: [
     AccountModule,

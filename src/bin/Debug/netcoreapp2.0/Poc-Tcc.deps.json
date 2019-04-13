@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "babc89b6ab7fe2f56874caf5af6a50ff602f5e36"
+    "signature": "89e7792a0831b950cc78d7820eeb3de84cf6f79a"
   },
   "compilationOptions": {
     "defines": [
@@ -27,6 +27,7 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "3.2.0",
           "Microsoft.AspNetCore.All": "2.0.0",
           "Microsoft.NETCore.App": "2.0.0",
+          "RestSharp": "106.6.9",
           "FluentValidation.AspNetCore": "7.3.3"
         },
         "runtime": {
@@ -2935,6 +2936,17 @@
           "lib/netstandard1.0/Remotion.Linq.dll": {}
         }
       },
+      "RestSharp/106.6.9": {
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {
+            "assemblyVersion": "106.6.9.0",
+            "fileVersion": "106.6.9.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "runtimeTargets": {
           "runtime/debian.8-x64/native/_._": {
@@ -5765,6 +5777,13 @@
       "sha512": "sha512-m9y+SLyqYEDcc3lnqAHO2VOsdIeDuO02IuBXeo7CIDve2J3ahXQRieZt2DuoXgCnWW83PgN6+8CQsaORlwAMXw==",
       "path": "remotion.linq/2.1.1",
       "hashPath": "remotion.linq.2.1.1.nupkg.sha512"
+    },
+    "RestSharp/106.6.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8RNSrGB8OJqkVnUno0amSL1dsTXGkqVjRvpgwhDR1cy4xhwc/6PWAJFiz6B5cnwmCB9aYMGaHrgKfTt6iMziqw==",
+      "path": "restsharp/106.6.9",
+      "hashPath": "restsharp.106.6.9.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",

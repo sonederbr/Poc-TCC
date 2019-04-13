@@ -7,3 +7,8 @@ export interface HomeDetails {
   gender: string;
   pictureUrl: string;
 }
+
+export interface ProductDetail {
+  name: string;
+  quantidade: number;
+}
