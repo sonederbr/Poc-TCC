@@ -1,23 +1,18 @@
 ﻿<Properties StartupConfiguration="{27E2D292-D66B-47A1-AFF0-5DBADD669799}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/ProductController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
     <Files>
-      <File FileName="Controllers/ProductController.cs" Line="38" Column="49" />
+      <File FileName="appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="appsettings.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Poc-Tcc" expanded="True">
             <Node name="Poc-Tcc" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="ProductController.cs" selected="True" />
-              </Node>
-              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" selected="True" />
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
